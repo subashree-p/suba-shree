@@ -1,1 +1,129 @@
 
+1. #include<stdio.h>
+int main()
+{
+	int a=5,b=8;
+	printf("%d",++(a*b+1));
+	return 0;
+	
+}
+OUTPUT:
+    compile time error
+________________________________________
+2.  #include<stdio.h>
+int main()
+{
+	int a=5;
+	a=printf("good")+printf("boy");
+	printf("\n%d",a);
+	return 0;
+}
+OUTPUT:
+     goodboy
+     7
+________________________________________
+3. #include<stdio.h>
+int main()
+{
+	int a=5;
+	a=printf("welcome");
+	printf("\n%d",a);
+	return 0;
+}
+OUTPUT:
+     welcome 
+     7
+________________________________________
+4.  #include<stdio.h>
+int main()
+{
+	char ch='A';
+	ch=ch+1;
+	printf("%c",ch);
+	
+  return 0;
+}
+OUTPUT:
+      B
+________________________________________
+5. #include<stdio.h>
+int main()
+{
+	int a,b;
+	a=b=4;
+	a=a==b;
+	printf("%d",a);
+	return 0;
+}
+OUTPUT:
+      1
+________________________________________
+6.  #include<stdio.h>
+int main()
+{
+	int i=10;
+	i=!i>14;
+	printf("%d",i);
+	return 0;
+}
+OUTPUT:
+      0
+________________________________________
+7.  #include<stdio.h>
+int main()
+{
+	int x,y=5,z=5;
+	x=y==z;
+	printf("%d",x);
+	
+	return 0;
+}
+OUTPUT:
+      1
+________________________________________
+8.  #include<stdio.h>
+int main()
+{
+	int i=3;
+	printf("%d",(++i)++);
+	return 0;
+}
+OUTPUT:
+      compile time error
+_______________________________________
+9.  #include<stdio.h>
+int main()
+{
+	int a=3,b=5;
+	int t=a;
+	a=b;
+	b=t;
+	printf("%d%d",a,b);
+}
+OUTPUT:
+       5 3
+_______________________________________
+10.  #include<stdio.h>
+int main()
+{
+	int sum=2+4/2+6*2;
+	printf("%d",sum);
+	
+	return 0;
+}
+OUTPUT:
+       16
+_______________________________________
+11.   #include<stdio.h>
+int main()
+{
+	int i=5;
+	if(--i)
+	{
+		main();
+		printf("%d",i);
+	}
+	return 0;
+}
+OUTPUT :
+        compile time error.
