@@ -1,0 +1,23 @@
+//
+#include<stdio.h>
+int main()
+{
+	int n,a,b,c,d,num;
+	printf("enter the number :");//153
+	scanf("%d",&n);
+	a=n/10;//15
+	b=n%10;//3
+	c=a/10;//1
+	d=a%10;//5
+	num=(c*c*c)+(d*d*d)+(b*b*b);
+	if(n==num)
+		printf("the given number is armstrong",num);
+	else
+	printf("the number is not armstrong",num);
+		
+	return 0;
+	
+	}
+OUTPUT :
+ enter the number : 153
+  The given number is Armstrong
